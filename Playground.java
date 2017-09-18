@@ -1,9 +1,11 @@
 package Playground;
 
 public class Playground {
-    // Операторы сравнения:
-    // < - меньше,  <= - меньше либо равно, > - больше,  >= - больше либо равно, == - равно, != - не равно.
-    //Логический оператор. Конструкция if(условие) оператор;
+    /*
+    Операторы сравнения:
+    < - меньше,  <= - меньше либо равно, > - больше,  >= - больше либо равно, == - равно, != - не равно.
+    Логический оператор. Конструкция if(условие) оператор;
+    */
 }
 class ifDemo {
     public static void main(String[] args) {
@@ -58,5 +60,67 @@ class  BlockDemo{
             d = j/i;
             System.out.println("j / i равно " + d);
         }
+    }
+}
+/*
+    Расчет числа кубических дюймов в кубе объёмом в 1 куб. милю
+*/
+class Inches {
+    public static void main(String[] args) {
+        long ci;
+        long im;
+
+        im = 5280 * 12;
+
+        ci = im * im * im;
+
+        System.out.println("В одной кубической миле содержится " + ci + " кубических дюймов");
+    }
+}
+
+/*
+Определение длины гипотенузы, исходя из длины катетов,
+    по теореме Пифагора
+ */
+
+class Hypot {
+    public static void main(String[] args) {
+        double x, y, z;
+
+        x = 3;
+        y = 4;
+
+        z = Math.sqrt(x*x + y*y);//Math - класс, sqrt() (извлечение квадратного корня) - метод. Метод sqrt() опеределён класса Math
+        System.out.println("Длина гипотенузы: " + z);
+    }
+}
+
+class CharArithDemo {
+    public static void main(String[] args) {
+        char ch;
+
+        ch = 'X';
+        System.out.println("ch содержит " + ch);
+
+        ch++;//паеременную типа char можно инкрементировать
+        System.out.println("теперь содержит " + ch);
+
+        ch = 90;//присваевается символ согласно индексу из таблицы ASCII
+        System.out.println("теперь содержит " + ch) ;
+    }
+}
+
+class BoolDemo{
+    public static void main(String[] args) {
+        boolean b;
+
+        b = false;
+        System.out.println("Значение b: " + b);
+        b = true;
+        System.out.println("Значение b: " + b);
+
+        if(b) System.out.println("Значение b истино. При ложном значении действие не выполняется");
+
+        System.out.println("1 > 0 : " + (1 > 0));
     }
 }
